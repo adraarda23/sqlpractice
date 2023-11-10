@@ -1,0 +1,6 @@
+SELECT Customers.customer_id, Customers.first_name, Orders.amount, Orders.order_id
+FROM Customers
+JOIN Orders
+ON Customers.customer_id = Orders.customer_id
+WHERE Orders.order_id <=4
+ORDER BY Orders.order_id ASC
